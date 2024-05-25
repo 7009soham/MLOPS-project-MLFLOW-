@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to Node.js 20 compatible version
 
       - name: Lint code
         run: echo "Linting repository"
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to Node.js 20 compatible version
 
       - name: Install Utilities
         run: |
@@ -39,7 +39,7 @@ jobs:
           sudo apt-get install -y jq unzip
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v3  # Updated to Node.js 20 compatible version
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -66,10 +66,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to Node.js 20 compatible version
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v3  # Updated to Node.js 20 compatible version
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
