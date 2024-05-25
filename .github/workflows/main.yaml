@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - 'README.md'
       #1122
+      #1222
 
 permissions:
   id-token: write
