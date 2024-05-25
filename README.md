@@ -100,7 +100,7 @@ export MLFLOW_TRACKING_PASSWORD=1fa26fb2b51ba98ea744b1da9ef3f4de62386536
 
 	2. ECR: Elastic Container registry to save your docker image in aws
 
-
+wq
 	#Description: About the deployment
 
 	1. Build docker image of the source code
