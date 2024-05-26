@@ -37,7 +37,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y jq unzip
-          
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
@@ -60,8 +60,9 @@ jobs:
           IMAGE_TAG: latest
         run: |
           docker buildx build --platform linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG --push .
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_ENV
-
           
           
   Continuous-Deployment:
