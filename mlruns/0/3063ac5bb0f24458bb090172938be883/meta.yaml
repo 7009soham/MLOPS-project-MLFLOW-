@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/projects/MLOPS-project-MLFLOW-/mlruns/0/3063ac5bb0f24458bb090172938be883/artifacts
+end_time: 1716723558306
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3063ac5bb0f24458bb090172938be883
+run_name: nervous-fawn-733
+run_uuid: 3063ac5bb0f24458bb090172938be883
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716723549862
+status: 3
+tags: []
+user_id: soham
